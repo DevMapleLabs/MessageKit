@@ -40,7 +40,7 @@ extension MessagesViewController {
 
   // MARK: - Getters
 
-  var keyboardManager: KeyboardManager { state.keyboardManager }
+  // var keyboardManager: KeyboardManager { state.keyboardManager }
 
   var panGesture: UIPanGestureRecognizer? {
     get { state.panGesture }
@@ -62,6 +62,8 @@ extension MessagesViewController {
     get { state.inputBarType }
     set { state.inputBarType = newValue }
   }
+
+  public var keyboardManager: KeyboardManager { state.keyboardManager }
 
   /// A Boolean value that determines whether the `MessagesCollectionView`
   /// maintains it's current position when the height of the `MessageInputBar` changes.
